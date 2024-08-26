@@ -1,6 +1,7 @@
 
 # Theme Switcher Project
 
+
 ## Project Overview
 
 This project is a React.js application built with TypeScript, designed to demonstrate how to implement multiple themes using styled components. The application allows users to switch between different color themes—light, dark, blue, and purple—across the entire application. The design components are styled using the Chakra UI library, ensuring a responsive and visually appealing user interface.
