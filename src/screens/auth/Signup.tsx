@@ -23,50 +23,43 @@ export function Signup(props: LoginProps) {
         alignItems={"center"}
         justifyContent={"center"}
       >
-        <Column width={6}>
+        <Column width={4} style={{ margin: 10 }}>
           <Container style={{ padding: 20 }}>
             <Title style={{ marginBottom: 5 }}>Sign-Up</Title>
             <p style={{ marginBottom: 20, textTransform: "capitalize" }}>
               Fill Following details to Register
             </p>
-            <Box
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                marginBottom: 0,
-                width: "50%",
-              }}
-            >
-              <InputContainer>
-                <InputLabel htmlFor="username">Username:</InputLabel>
-                <InputField type="text" id="username" name="username" />
-              </InputContainer>
-              <InputContainer>
-                <InputLabel htmlFor="email">Email:</InputLabel>
-                <InputField type="email" id="email" name="email" />
-              </InputContainer>
-              <InputContainer>
-                <InputLabel htmlFor="phone">Phone Number:</InputLabel>
-                <InputField type="number" id="phone" name="phone" />
-              </InputContainer>
-              <InputContainer>
-                <InputLabel htmlFor="password">Password:</InputLabel>
-                <InputField type="password" id="password" name="password" />
-              </InputContainer>
-              <InputContainer>
-                <InputLabel htmlFor="confirmpassword">
-                  Confirm Password:
-                </InputLabel>
-                <InputField
-                  type="password"
-                  id="confirmpassword"
-                  name="confirmpassword"
-                />
-              </InputContainer>
-              <Button style={{ marginBottom: 20, marginTop: 10 }}>
-                <ButtonText>Register</ButtonText>
-              </Button>
-            </Box>
+
+            <InputContainer>
+              <InputLabel htmlFor="username">Username:</InputLabel>
+              <InputField type="text" id="username" name="username" />
+            </InputContainer>
+            <InputContainer>
+              <InputLabel htmlFor="email">Email:</InputLabel>
+              <InputField type="email" id="email" name="email" />
+            </InputContainer>
+            <InputContainer>
+              <InputLabel htmlFor="phone">Phone Number:</InputLabel>
+              <InputField type="number" id="phone" name="phone" />
+            </InputContainer>
+            <InputContainer>
+              <InputLabel htmlFor="password">Password:</InputLabel>
+              <InputField type="password" id="password" name="password" />
+            </InputContainer>
+            <InputContainer>
+              <InputLabel htmlFor="confirmpassword">
+                Confirm Password:
+              </InputLabel>
+              <InputField
+                type="password"
+                id="confirmpassword"
+                name="confirmpassword"
+              />
+            </InputContainer>
+            <Button style={{ marginBottom: 20, marginTop: 10 }}>
+              <ButtonText>Register</ButtonText>
+            </Button>
+
             <Flex mt={1}>
               <p>Have An Account?</p>
               <Link style={{ paddingLeft: 2 }} to="/">

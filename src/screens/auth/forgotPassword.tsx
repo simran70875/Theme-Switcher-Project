@@ -23,7 +23,7 @@ export function ForgotPassword(props: LoginProps) {
         alignItems={"center"}
         justifyContent={"center"}
       >
-        <Column width={6}>
+        <Column width={4} style={{ margin: 10 }}>
           <Container style={{ padding: 20 }}>
             <Title style={{ marginBottom: 5 }}>Forgot Password</Title>
             <p
@@ -35,14 +35,7 @@ export function ForgotPassword(props: LoginProps) {
             >
               Enter Email to set new password
             </p>
-            <Box
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                marginBottom: 0,
-                width: "50%",
-              }}
-            >
+           
               <InputContainer>
                 <InputLabel htmlFor="loginId">Email:</InputLabel>
                 <InputField type="text" id="loginId" name="loginId" />
@@ -60,7 +53,7 @@ export function ForgotPassword(props: LoginProps) {
               <Button style={{ marginBottom: 20, marginTop: 10 }}>
                 <ButtonText>Set Password</ButtonText>
               </Button>
-            </Box>
+            
          
           </Container>
         </Column>

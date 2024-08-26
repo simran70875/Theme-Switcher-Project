@@ -1,7 +1,9 @@
-import { Box } from "@chakra-ui/react";
+import { Box,Input,Text } from "@chakra-ui/react";
 import styled from "styled-components";
 
-export const Title = styled.h1`
+
+
+export const Title = styled(Text)`
   color: ${({ theme }) => theme.colors.quoteTitle};
   font-family: monospace;
   font-size: 30px;
@@ -34,15 +36,15 @@ export const LoginContainer = styled(Box)`
 
 export const Container = styled.div`
   background-color: ${({ theme }) => theme.colors.quoteBgc};
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
   color: ${({ theme }) => theme.colors.quoteTitle};
   border-radius: 20px;
 `;
 
-export const InputContainer = styled.div`
+export const InputContainer = styled(Box)`
   margin-bottom: 20px;
 `;
 
@@ -51,9 +53,8 @@ export const InputLabel = styled.label`
   margin-bottom: 5px;
 `;
 
-export const InputField = styled.input`
-  color: #000;
-  width: 100%;
+export const InputField = styled(Input)`
+  color:${({ theme }) => theme.colors.quoteTitle};
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
